@@ -10,4 +10,16 @@ def get_numbers_generator():
     yield "one"
     yield "two"
     yield "three"
-            
+
+# res1= get_numbers()
+# print(res1)  
+
+res2 = get_numbers_generator()
+# print(next(res2))
+# print(next(res2))
+# print(next(res2))
+# print(next(res2))  # This will raise StopIteration exception since there are no more values to yield
+
+# for num in res2:
+#     print(num)  # This will print "one", "two", "three" one at a time
+
